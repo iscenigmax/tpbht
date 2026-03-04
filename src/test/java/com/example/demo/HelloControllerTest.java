@@ -17,7 +17,7 @@ public class HelloControllerTest {
 
     @Test
     public void shouldReturnHelloWorld() throws Exception {
-        mockMvc.perform(get("/"))
+        mockMvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("¡Hola Mundo desde Spring Boot CI/CD Demo!"));
     }

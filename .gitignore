@@ -31,3 +31,19 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Maven ###
+log/
+maven_output.txt
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Miscellaneous ###
+*.log
+*.tmp
+*.temp
+*~
+.bak
+.swp

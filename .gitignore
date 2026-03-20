@@ -1,8 +1,43 @@
-HELP.md
+# Logs
+logs/
+log/
+*.log
+*.out
+*.err
+maven_output.txt
+
+# Maven
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+*.pid
+*.pid.lock
+*.seed
+*.properties
+*.yml
+*.yaml
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
 
 ### STS ###
 .apt_generated
@@ -32,18 +67,33 @@ build/
 ### VS Code ###
 .vscode/
 
-### Maven ###
-log/
-maven_output.txt
-
-### OS ###
+# OS
 .DS_Store
 Thumbs.db
 
+# Env
+.env
+.env.*
+
+# Node (si usas frontend)
+node_modules/
+
+# Coverage
+coverage/
+
+# GitHub Actions artifacts
+*.cache
+*.tmp
+
+# Test outputs
+/test-output/
+
 ### Miscellaneous ###
-*.log
 *.tmp
 *.temp
 *~
 .bak
 .swp
+
+# Docs
+HELP.md

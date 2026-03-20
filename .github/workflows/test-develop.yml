@@ -7,7 +7,7 @@ on:
     branches: [ "develop" ]
   pull_request:
     branches: [ "develop" ]
-
+  workflow_dispatch:
 jobs:
   # Job unico: prepara entorno Java y ejecuta pruebas Maven.
   test:

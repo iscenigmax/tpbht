@@ -1,0 +1,30 @@
+# Workflow de CI para validar pruebas en la rama develop.
+name: test-develop.yml
+
+# Se ejecuta al subir cambios o abrir/actualizar PRs hacia develop.
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+
+jobs:
+  # Job unico: prepara entorno Java y ejecuta pruebas Maven.
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Descarga el codigo del repositorio para trabajar sobre el commit actual.
+      - uses: actions/checkout@v4
+
+      # Configura JDK 17 (Temurin) y cachea dependencias de Maven para acelerar ejecuciones.
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      # Ejecuta pruebas unitarias/integracion definidas en el proyecto.
+      - name: Run Unit Tests
+        run: mvn -B test --file pom.xml

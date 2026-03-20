@@ -84,6 +84,7 @@ coverage/
 # GitHub Actions artifacts
 *.cache
 *.tmp
+!.github/workflows/
 
 # Test outputs
 /test-output/

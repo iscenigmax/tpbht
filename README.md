@@ -1,43 +1,72 @@
-# Taller de Productividad Basada en Herramientas Tecnológicas
+# Taller de Productividad Basada en Herramientas Tecnologicas
 
-Este proyecto es una aplicación web de demostración desarrollada para la **Universidad Tecmilenio** como parte del **Taller de Productividad Basada en Herramientas Tecnológicas**. El objetivo es demostrar la implementación de un ecosistema de desarrollo moderno, eficiente y automatizado.
+Aplicacion web de demostracion desarrollada para la **Universidad Tecmilenio** dentro del **Taller de Productividad Basada en Herramientas Tecnologicas**.
 
-## 🚀 Propósito del Proyecto
-Demostrar las competencias adquiridas en el taller, incluyendo:
-1. **Desarrollo Backend**: Creación de una arquitectura robusta con Java 17 y Spring Boot 3.2.3.
-2. **Interfaz Moderna**: Implementación de una UI Premium con estética Glassmorphic.
-3. **Calidad de Software**: Pruebas unitarias automatizadas con JUnit 5 y MockMvc.
-4. **DevOps & CI/CD**: Automatización total mediante GitHub Actions.
+El proyecto muestra una base moderna de desarrollo con Spring Boot, pruebas automatizadas y soporte para flujo CI.
 
-## 🛠️ Stack Tecnológico
+## Objetivo
+Demostrar capacidades clave del taller:
+1. **Backend con Java y Spring Boot**.
+2. **Interfaz web estatica moderna**.
+3. **Calidad de software con pruebas automatizadas**.
+4. **Practicas de automatizacion para CI/CD**.
+
+## Stack tecnologico
 - **Lenguaje**: Java 17
 - **Framework**: Spring Boot 3.2.3
-- **Gestor de Dependencias**: Maven
-- **Estilo**: Vanilla CSS (Glassmorphism)
-- **CI/CD**: GitHub Actions
+- **Build tool**: Maven Wrapper (`mvnw`, `mvnw.cmd`)
+- **Frontend**: HTML + CSS (archivo estatico)
+- **Testing**: JUnit 5, MockMvc, Spring Boot Test
 
-## 💻 Ejecución Local
+## Arquitectura
+La arquitectura actual esta documentada en:
+- `docs/ARCHITECTURE.md`
+
+Incluye vista general, componentes, flujos HTTP, estrategia de pruebas, riesgos y hoja de ruta.
+
+## Ejecucion local
 
 ### Requisitos
-- Java 17 o superior.
-- Maven 3.6+ (o el wrapper `mvnw` incluido).
+- Java 17+
 
-### Compilar y Probar
-Para asegurar la integridad del código, ejecuta:
-```cmd
+### Compilar y probar
+```powershell
 .\mvnw.cmd clean test
 ```
 
-### Levantar la Aplicación
-Para iniciar el servidor de desarrollo:
-```cmd
+### Levantar la aplicacion
+```powershell
 .\mvnw.cmd spring-boot:run
 ```
-La aplicación estará disponible en [http://localhost:8080/](http://localhost:8080/).
 
-## 🔗 Endpoints del API
-- `GET /`: Interfaz visual principal (HTML Estático).
-- `GET /api/hello`: Endpoint REST de prueba.
+URL local:
+- `http://localhost:8080/`
+
+## Endpoints
+- `GET /` - Sirve la pagina principal (`src/main/resources/static/index.html`).
+- `GET /api/hello` - Endpoint REST de saludo desde `HelloController`.
+
+## Estructura principal
+```text
+src/
+  main/
+	java/com/example/demo/
+	  DemoApplication.java
+	  HelloController.java
+	resources/static/
+	  index.html
+  test/
+	java/com/example/demo/
+	  DemoApplicationTests.java
+	  HelloControllerTest.java
+	  IndexIntegrationTest.java
+docs/
+  ARCHITECTURE.md
+CHANGELOG.md
+```
+
+## Historial de cambios
+Consulta `CHANGELOG.md` para ver las versiones y cambios registrados.
 
 ---
-© 2024 **Universidad Tecmilenio** | Taller de Productividad Basada en Herramientas Tecnológicas.
+© 2026 **Universidad Tecmilenio** | Taller de Productividad Basada en Herramientas Tecnologicas.

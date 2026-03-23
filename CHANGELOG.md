@@ -5,6 +5,11 @@ Todos los cambios notables de este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-rc.2] - 2026-03-20
+
+### Añadido
+- Documento de arquitectura de la aplicación en `docs/ARCHITECTURE.md` (vista general, componentes, flujos HTTP, pruebas y hoja de ruta).
+
 ## [1.0.0-rc.1] - 2026-03-04
 
 ### Añadido

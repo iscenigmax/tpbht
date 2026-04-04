@@ -1,0 +1,17 @@
+site_name: Nombre del Proyecto
+site_description: Documentación técnica y funcional del proyecto
+
+theme:
+  name: material
+
+nav:
+  - Inicio: index.md
+  - Resumen ejecutivo: resumen-ejecutivo.md
+  - Arquitectura: arquitectura.md
+  - Requerimientos: requerimientos.md
+  - Instalación: instalacion.md
+  - Configuración: configuracion.md
+  - Manual de usuario: manual-usuario.md
+  - Manual de administrador: manual-administrador.md
+  - Contribución: contribucion.md
+  - Roadmap: roadmap.md

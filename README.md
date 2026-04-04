@@ -65,6 +65,23 @@ docs/
 CHANGELOG.md
 ```
 
+## Tabla de contenidos
+
+- [Objetivo](#objetivo)
+- [Stack tecnológico](#stack-tecnologico)
+- [Arquitectura](#arquitectura)
+- [Ejecución local](#ejecucion-local)
+  - [Requisitos](#requisitos)
+  - [Compilar y probar](#compilar-y-probar)
+  - [Levantar la aplicación](#levantar-la-aplicacion)
+- [Endpoints](#endpoints)
+- [Estructura principal](#estructura-principal)
+- [Historial de cambios](#historial-de-cambios)
+- [Wiki del proyecto](https://github.com/iscenigmax/tpbht/wiki)
+  - [Home](https://github.com/iscenigmax/tpbht/wiki)
+- [Documentación adicional](docs/ARCHITECTURE.md)
+- [Changelog](CHANGELOG.md)
+
 ## Historial de cambios
 Consulta `CHANGELOG.md` para ver las versiones y cambios registrados.
 
